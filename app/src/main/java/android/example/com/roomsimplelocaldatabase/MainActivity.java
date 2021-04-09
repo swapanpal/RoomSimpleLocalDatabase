@@ -12,7 +12,7 @@ import android.os.Bundle;
 import java.util.List;
 
 // Source = https://www.youtube.com/watch?v=dBbUMjU3dGQ
-// 1. User, 2. UserDao, 3. UserDatabase, 4. UserRepository
+// 1. User, 2. UserDao, 3. UserDatabase, 4. UserRepository, 5.UI, 6.UserAdapter
 public class MainActivity extends AppCompatActivity {
     private UserViewModel viewModel;
 
