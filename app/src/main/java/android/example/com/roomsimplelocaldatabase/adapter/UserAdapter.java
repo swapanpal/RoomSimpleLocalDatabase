@@ -48,6 +48,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.VH> {
 
     public void setUser(List<User> users) {
         userList = users;
+        notifyDataSetChanged();
     }
 
     public class VH extends RecyclerView.ViewHolder {

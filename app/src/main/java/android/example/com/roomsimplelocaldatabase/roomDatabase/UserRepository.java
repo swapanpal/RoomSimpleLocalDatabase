@@ -23,9 +23,21 @@ public class UserRepository {
         return userList;
     }
     public void insert(User user){
-        mDao.insert(user);
+        UserDatabase.executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                mDao.insert(user);
+            }
+        });
+
     }
     public void delete(User user){
-        mDao.delete(user);
+        UserDatabase.executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                mDao.delete(user);
+            }
+        });
+
     }
 }
