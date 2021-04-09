@@ -11,7 +11,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = (User.class),version = 1, exportSchema = false)
+@Database(entities = {User.class},version = 1, exportSchema = false)
 public abstract class UserDatabase extends RoomDatabase {
 
     public abstract UserDao getDao();
